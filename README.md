@@ -1,5 +1,5 @@
 # Instrucciones de Ejecución
-
+Requerimientos: NodeJs, MongoDB
 ## Cómo ejecutar el Backend
 
 Desde la raíz del proyecto:
