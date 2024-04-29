@@ -5,7 +5,7 @@ function TaskCard({ task }) {
     // Crear un objeto Date a partir de la fecha en formato string
     const date = new Date(task.date);
 
-    // Formatear la fecha como quieras
+    // Formatear la fecha
     const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
 
     const { deleteTask } = useTask()

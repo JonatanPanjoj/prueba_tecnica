@@ -81,6 +81,7 @@ function login(req, res) {
     })
 }
 
+//Se utiliza para verificar si el usuario está logeado o no
 function verifyToken(req, res) {
     const { token } = req.cookies;
 
@@ -88,8 +89,6 @@ function verifyToken(req, res) {
 
     try {
         var decoded = jwt.decode(token, secret);
-        console.log('Si decodifique');
-        console.log('DECODED ID: ', decoded )
     } catch (err) {
         return res.status(401).json({ message: "Unauthorized no secret" });
     }

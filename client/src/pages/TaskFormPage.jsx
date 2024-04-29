@@ -11,6 +11,8 @@ function TaskFormPage() {
 
     const params = useParams();
 
+
+    //Funciones para el estado global
     const onSubmit = handleSubmit((data) => {
         if(params.id == 'new'){
             createTask(data);

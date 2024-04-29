@@ -19,6 +19,8 @@ export const AuthProvider = ({ children }) => {
     const [errors, setErrors] = useState([]);
     const [loading, setLoading] = useState(true);
 
+
+    //FUNCIONES PARA PODE ACCEDER A ELLAS GLOBALMENTE
     const signup = async (user) => {
         try {
             const res = await registerRequest(user)

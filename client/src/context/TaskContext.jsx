@@ -15,6 +15,8 @@ export function TaskProvider({ children }) {
 
     const [tasks, setTask] = useState([]);
 
+    //FUNCIONES PARA PODE ACCEDER A ELLAS GLOBALMENTE
+    //Funciona como el gestor de estado
     const getTasks = async () => {
         try {
             const res = await obtenerTareas();

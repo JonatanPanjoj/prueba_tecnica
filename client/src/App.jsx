@@ -12,7 +12,7 @@ import HomePage from './pages/HomePage'
 import ProtectedRoute from './ProtectedRoute'
 import Navbar from './components/Navbar'
 
-//Utilización
+//Rutas
 function App(){
   return (
     <AuthProvider>

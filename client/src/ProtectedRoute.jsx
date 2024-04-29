@@ -2,6 +2,7 @@ import { Navigate, Outlet} from "react-router-dom";
 import { useAuth } from "./context/AuthContext"
 
 function ProtectedRoute() {
+    //Verifica si el usuario está logeado
     const {loading, isAuthenticated} =  useAuth();
 
     if (loading) return <h1>Loading...</h1 >;
